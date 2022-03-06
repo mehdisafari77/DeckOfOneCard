@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		B5BD5A6227D4768E001C25CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A6127D4768E001C25CF /* AppDelegate.swift */; };
 		B5BD5A6427D4768E001C25CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A6327D4768E001C25CF /* SceneDelegate.swift */; };
-		B5BD5A6627D4768E001C25CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A6527D4768E001C25CF /* ViewController.swift */; };
 		B5BD5A6927D4768E001C25CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BD5A6727D4768E001C25CF /* Main.storyboard */; };
-		B5BD5A6C27D4768E001C25CF /* DeckOfOneCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A6A27D4768E001C25CF /* DeckOfOneCard.xcdatamodeld */; };
 		B5BD5A6E27D4768F001C25CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5BD5A6D27D4768F001C25CF /* Assets.xcassets */; };
 		B5BD5A7127D4768F001C25CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5BD5A6F27D4768F001C25CF /* LaunchScreen.storyboard */; };
+		B5BD5A7B27D4777C001C25CF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A7A27D4777C001C25CF /* Card.swift */; };
+		B5BD5A7D27D47792001C25CF /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A7C27D47792001C25CF /* CardController.swift */; };
+		B5BD5A7F27D4779B001C25CF /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A7E27D4779B001C25CF /* CardError.swift */; };
+		B5BD5A8127D477BB001C25CF /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A8027D477BB001C25CF /* CardViewController.swift */; };
+		B5BD5A8327D477DA001C25CF /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BD5A8227D477DA001C25CF /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B5BD5A5E27D4768E001C25CF /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BD5A6127D4768E001C25CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5BD5A6327D4768E001C25CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5BD5A6527D4768E001C25CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5BD5A6827D4768E001C25CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5BD5A6B27D4768E001C25CF /* DeckOfOneCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeckOfOneCard.xcdatamodel; sourceTree = "<group>"; };
 		B5BD5A6D27D4768F001C25CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5BD5A7027D4768F001C25CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5BD5A7227D4768F001C25CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5BD5A7A27D4777C001C25CF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B5BD5A7C27D47792001C25CF /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		B5BD5A7E27D4779B001C25CF /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		B5BD5A8027D477BB001C25CF /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		B5BD5A8227D477DA001C25CF /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,67 @@
 		B5BD5A6027D4768E001C25CF /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				B5BD5A6127D4768E001C25CF /* AppDelegate.swift */,
-				B5BD5A6327D4768E001C25CF /* SceneDelegate.swift */,
-				B5BD5A6527D4768E001C25CF /* ViewController.swift */,
-				B5BD5A6727D4768E001C25CF /* Main.storyboard */,
-				B5BD5A6D27D4768F001C25CF /* Assets.xcassets */,
-				B5BD5A6F27D4768F001C25CF /* LaunchScreen.storyboard */,
-				B5BD5A7227D4768F001C25CF /* Info.plist */,
-				B5BD5A6A27D4768E001C25CF /* DeckOfOneCard.xcdatamodeld */,
+				B5BD5A7827D476E4001C25CF /* Resources */,
+				B5BD5A7927D47731001C25CF /* Storyboards */,
+				B5BD5A8427D477EB001C25CF /* Models */,
+				B5BD5A8527D477F3001C25CF /* Model Controllers */,
+				B5BD5A8627D477FE001C25CF /* View Controllers */,
+				B5BD5A8727D4780F001C25CF /* Helpers */,
 			);
 			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		B5BD5A7827D476E4001C25CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A7227D4768F001C25CF /* Info.plist */,
+				B5BD5A6127D4768E001C25CF /* AppDelegate.swift */,
+				B5BD5A6327D4768E001C25CF /* SceneDelegate.swift */,
+				B5BD5A6D27D4768F001C25CF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5BD5A7927D47731001C25CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A6727D4768E001C25CF /* Main.storyboard */,
+				B5BD5A6F27D4768F001C25CF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B5BD5A8427D477EB001C25CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A7A27D4777C001C25CF /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5BD5A8527D477F3001C25CF /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A7C27D47792001C25CF /* CardController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		B5BD5A8627D477FE001C25CF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A8027D477BB001C25CF /* CardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5BD5A8727D4780F001C25CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5BD5A8227D477DA001C25CF /* UIViewControllerExtension.swift */,
+				B5BD5A7E27D4779B001C25CF /* CardError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +198,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BD5A6627D4768E001C25CF /* ViewController.swift in Sources */,
 				B5BD5A6227D4768E001C25CF /* AppDelegate.swift in Sources */,
-				B5BD5A6C27D4768E001C25CF /* DeckOfOneCard.xcdatamodeld in Sources */,
+				B5BD5A7D27D47792001C25CF /* CardController.swift in Sources */,
+				B5BD5A8127D477BB001C25CF /* CardViewController.swift in Sources */,
+				B5BD5A7B27D4777C001C25CF /* Card.swift in Sources */,
+				B5BD5A7F27D4779B001C25CF /* CardError.swift in Sources */,
+				B5BD5A8327D477DA001C25CF /* UIViewControllerExtension.swift in Sources */,
 				B5BD5A6427D4768E001C25CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVZJ4Z5QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +383,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FVZJ4Z5QQ2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
+				INFOPLIST_FILE = DeckOfOneCard/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,19 +424,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B5BD5A6A27D4768E001C25CF /* DeckOfOneCard.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B5BD5A6B27D4768E001C25CF /* DeckOfOneCard.xcdatamodel */,
-			);
-			currentVersion = B5BD5A6B27D4768E001C25CF /* DeckOfOneCard.xcdatamodel */;
-			path = DeckOfOneCard.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B5BD5A5627D4768E001C25CF /* Project object */;
 }
