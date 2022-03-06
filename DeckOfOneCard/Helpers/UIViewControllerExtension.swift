@@ -5,15 +5,16 @@
 //  Created by Mehdi MMS on 05/03/2022.
 //
 
-import Foundation
+import UIKit
 
-struct TopLevelObject: Decodable {
-    let cards: [Card]
+// Recommend they create a snippet.
+extension UIViewController {
+    
+    func presentErrorToUser(localizedError: LocalizedError) {
+        
+        let alertController = UIAlertController(title: "ERROR", message: localizedError.errorDescription, preferredStyle: .actionSheet)
+        let dismissAction = UIAlertAction(title: "Ok", style: .cancel)
+        alertController.addAction(dismissAction)
+        present(alertController, animated: true)
+    }
 }
-
-struct Card: Decodable {
-    let image: URL
-    let value: String
-    let suit: String
-}
-
